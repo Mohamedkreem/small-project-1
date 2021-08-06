@@ -1,7 +1,8 @@
 :root{
     --main-color:#10cab7;
     --secondary-color:#2c4755;
-
+    --section-padding: 60px;
+    --section-background: #f6f6f6;
 }
 
 *{
@@ -91,7 +92,7 @@ body{
         list-style: none;
         margin: 0px;
         padding: 0px;
-        background-color:  #f6f6f6;
+        background-color:  var(--section-padding);
         right: 0;
         min-width: 200px;
         top: calc(100% + 15px);
@@ -153,9 +154,9 @@ body{
             line-height: 1.8;
         }
         .features{
-            padding-top: 60px;
+            padding-top: var(--section-padding);
             padding-bottom: 60px;
-            background-color: #f6f6f6;
+            background-color: var(--section-background);
         }
         .features .container{
             display: grid;
@@ -240,7 +241,84 @@ body{
     display: none;
   }
 }
-    
+
+
+
+  .Portfolio  {
+      padding-top: var(--section-padding);
+      padding-bottom: var(--section-padding);
+      background-color: var(--section-background);
+  } 
+   .Portfolio .portfolio-content  {
+       display: grid;
+       grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+       grid-gap: 30px;
+       margin-top: 80px;
+   }
+
+    .Portfolio .portfolio-content .card {
+        background-color: white;
+    }
+    .Portfolio .portfolio-content .card img {
+        max-width: 100%;
+    }
+     .Portfolio .portfolio-content .card  .info {
+        padding: 20px;
+    }
+         .Portfolio .portfolio-content .card  .info h3{
+            margin: 0;
+         }
+     .Portfolio .portfolio-content .card  .info p{
+             color: #777;
+             line-height: 1.8;
+         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
